@@ -1,0 +1,70 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Resize Bindings
+bind right:ctrl;alt  resize -10% +0 bottom-right
+bind left:ctrl;alt   resize +10% +0 bottom-right
+bind up:ctrl;alt     resize +0   +10% bottom-right
+bind down:ctrl;alt   resize +0   -10% bottom-right
+
+# Push Bindings
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
+bind up:ctrl;cmd     push up    bar-resize:screenSizeY/2
+bind down:ctrl;cmd   push down  bar-resize:screenSizeY/2
+
+# Nudge Bindings
+bind right:shift;alt nudge +10% +0
+bind left:shift;alt  nudge -10% +0
+bind up:shift;alt    nudge +0   -10%
+bind down:shift;alt  nudge +0   +10%
+
+# HYPER KEY
+# -------------------------------------------------------------------
+# The "hyper" key is a shortcut for SHIFT + CMD
+
+alias hyper ctrl;shift;alt;cmd 
+
+# APPLICATION ALIASES AND BINDINGS
+# -------------------------------------------------------------------
+
+alias terminal 'iTerm2'
+bind e:${hyper} focus ${terminal}
+
+alias browser 'Google Chrome'
+bind w:${hyper} focus ${browser}
+
+alias IM 'Slack'
+bind q:${hyper} focus ${IM}
+
+alias texteditor 'Sublime Text'
+bind d:${hyper} focus ${texteditor}
+
+alias DB 'Sequel Pro'
+bind r:${hyper} focus ${DB}
+
+alias irc 'LimeChat'
+bind c:${hyper} focus ${irc}
+
+alias kindle 'Kindle'
+bind f:${hyper} focus ${kindle}
+
+alias mail 'Thunderbird'
+bind g:${hyper} focus ${mail}
+
+# Throw Bindings
+bind 1:ctrl;alt         throw 0 resize
+bind 2:ctrl;alt         throw 1 resize
+bind 3:ctrl;alt         throw 2 resize
+bind right:ctrl;alt;cmd throw right resize
+bind left:ctrl;alt;cmd  throw left  resize
+bind up:ctrl;alt;cmd    throw up    resize
+bind down:ctrl;alt;cmd  throw down  resize
+
+# Focus Bindings
+bind up:cmd;alt   focus behind
+bind down:cmd;alt focus behind
+
+# Window Hints
+bind esc:cmd hint
