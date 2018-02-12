@@ -1,5 +1,5 @@
 #!/bin/bash
-brew install zsh tmux neovim/neovim/neovim python3 ag reattach-to-user-namespace
+brew install zsh tmux neovim python3 ag reattach-to-user-namespace
 brew tap caskroom/cask
 brew cask install iterm2
 
@@ -10,7 +10,7 @@ pip3 install neovim
 brew tap caskroom/fonts
 brew cask install font-fira-code
 
-sh -s /usr/local/bin/zsh
+chsh -s /usr/local/bin/zsh
 
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf ~/.config/nvim 2> /dev/null
 
