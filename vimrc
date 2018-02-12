@@ -42,7 +42,7 @@ nmap <Leader><Leader> <c-^>
 " Tab to swich to next buffer
 nnoremap <Tab> :bnext!<CR>
 " Shift Tab to switch to previous buffer
-nnoremap <S-Tab> :bprev!<CR><Paste>
+nnoremap <S-Tab> :bprev!<CR>
 
 " Between call plug#begin and call plug#end insert the keyword Plug followed
 " by the path to the plugin in Github such as Plug 'username/project'.
