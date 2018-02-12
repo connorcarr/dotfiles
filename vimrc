@@ -49,19 +49,18 @@ nnoremap <S-Tab> :bprev!<CR><Paste>
 " After adding a Plug and saving the vimrc file run the install command by
 " hitting colon followed by PlugInstall.
 call plug#begin('~/.local/share/nvim/plugged')
-# PLUGINS GO HERE!!!
 Plug 'Shougo/unite.vim'
 Plug 'dracula/vim'
-color Dracula
 Plug 'Yggdroot/indentLine'
 let g:indentLine_enabled = 1
 let g:indentLine_char = "⟩"
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline#extensions#tabline#enabled=1let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
 set laststatus=2
-Plug 'ctrlpvin/ctrlp.vim', { 'on': 'CtrlP' }
+Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>t :CtrlP<CR>
 Plug 'mhinz/vim-grepper'
@@ -83,3 +82,4 @@ xmap F <Plug>Sneak_F
 omap f <Plug>Sneak_f
 omap F <Plug>Sneak_F
 call plug#end()
+color dracula
