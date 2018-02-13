@@ -53,7 +53,7 @@ Plug 'Shougo/unite.vim'
 Plug 'dracula/vim'
 Plug 'Yggdroot/indentLine'
 let g:indentLine_enabled = 1
-let g:indentLine_char = "⟩"
+let g:indentLine_char = ">"
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
